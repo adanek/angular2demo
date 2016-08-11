@@ -1,7 +1,8 @@
 import {Injectable} from '@angular/core';
 import 'rxjs/add/operator/toPromise';
-import {Hero} from "./hero";
 import {Http, Headers} from "@angular/http";
+
+import {Hero} from "./hero";
 
 @Injectable()
 export class HeroService{

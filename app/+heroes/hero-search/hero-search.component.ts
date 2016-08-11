@@ -3,11 +3,11 @@ import { Router }            from '@angular/router';
 import { Observable }        from 'rxjs/Observable';
 import { Subject }           from 'rxjs/Subject';
 import { HeroSearchService } from './hero-search.service';
-import { Hero } from './hero';
+import { Hero } from '../shared/hero';
 
 @Component({
     selector: 'hero-search',
-    templateUrl: 'app/hero-search.component.html',
+    templateUrl: './app/+heroes/hero-search/hero-search.component.html',
     providers: [HeroSearchService]
 })
 export class HeroSearchComponent implements OnInit {

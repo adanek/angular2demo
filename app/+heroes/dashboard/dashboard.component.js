@@ -9,9 +9,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var hero_service_1 = require("./hero.service");
 var router_1 = require("@angular/router");
-var hero_search_component_1 = require("./hero-search.component");
+var index_1 = require('../shared/index');
+var index_2 = require("../hero-search/index");
 var DashboardComponent = (function () {
     function DashboardComponent(router, heroService) {
         this.router = router;
@@ -29,11 +29,11 @@ var DashboardComponent = (function () {
     DashboardComponent = __decorate([
         core_1.Component({
             selector: 'my-dashboard',
-            templateUrl: 'app/dashboard.component.html',
-            styleUrls: ['app/dashboard.component.css'],
-            directives: [hero_search_component_1.HeroSearchComponent]
+            templateUrl: './app/+heroes/dashboard/dashboard.component.html',
+            styleUrls: ['./app/+heroes/dashboard/dashboard.component.css'],
+            directives: [index_2.HeroSearchComponent]
         }), 
-        __metadata('design:paramtypes', [router_1.Router, hero_service_1.HeroService])
+        __metadata('design:paramtypes', [router_1.Router, index_1.HeroService])
     ], DashboardComponent);
     return DashboardComponent;
 }());
